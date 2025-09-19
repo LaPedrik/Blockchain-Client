@@ -11,10 +11,10 @@
 
 ```mermaid
 graph TD;
-    Transaction-->Verify Signature;
-    Verify Signature-->Create Block;
-    Create Block-->Mining;
-    Mining-->Validate Transaction;
+    Transaction-->VerifySignature;
+    VerifySignature-->CreateBlock;
+    CreateBlock-->Mining;
+    Mining-->ValidateTransaction;
 ```
 
 ## API-клиент
