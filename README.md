@@ -9,7 +9,10 @@
 
 Хар-ка Endpoint'ов: 
 
-| Название  | Адрес | Функция |
-| ------------- | ------------- | ------------- |
-| Connect (POST)  | api/wallet/connect  | Подключение к клиенту |
-| Balance (GET)  | api/wallet/balance  | Получение баланса по адресу |
+| Название  | Адрес | Аргументы | Функция |
+| ------------- | ------------- | ------------- | ------------- |
+| Connect (POST)  | api/wallet/connect  | WalletId, WalletAddress | Подключение к клиенту |
+| Balance (GET)  | api/wallet/balance  | - | Получение баланса по адресу |
+| Mine (POST)  | api/wallet/mine | MinerAddress | Получение баланса по адресу |
+| Transaction (POST)  | api/wallet/transaction  | Sender, Recipient, Amount, Signature, PublicKey | Отправка транзакции |
+| Transactions (GET)  | api/wallet/transactions  | WalletAddress | Получение истории транзакций |
