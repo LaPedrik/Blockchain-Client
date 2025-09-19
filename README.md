@@ -9,6 +9,14 @@
 | ------------- | ------------- | ------------- | ------------- |
 | Блочный | SHA256 | 1 тестовый узел | Proof-Of-Work (POW) |
 
+```mermaid
+graph TD;
+    Transaction-->Verify Signature;
+    Verify Signature-->Create Block;
+    Create Block-->Mining;
+    Mining-->Validate Transaction;
+```
+
 ## API-клиент
 Базово открывается на порте 5000. Поддерживает GET и POST запросы. 
 
